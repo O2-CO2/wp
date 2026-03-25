@@ -30,6 +30,8 @@ cp .env.example .env
 VITE_API_URL=https://your-wordpress-domain.com/wp-json
 ```
 
+Важно: для сайта, открытого по HTTPS, `VITE_API_URL` тоже должен быть HTTPS, иначе браузер заблокирует запросы как Mixed Content.
+
 4. Запустите проект:
 
 ```bash
@@ -73,4 +75,5 @@ npm run preview
 - [ ] `npm run check` проходит без ошибок
 - [ ] Успешный сценарий: вход -> список -> создание -> редактирование -> удаление -> выход
 - [ ] В Network нет CORS/401 ошибок на защищенных запросах
+# wp
 # wp
